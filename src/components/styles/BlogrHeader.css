@@ -1,0 +1,94 @@
+/* Header  */
+
+.blogr__header {
+  background: linear-gradient(
+    to right,
+    var(--very-light-red),
+    var(--light-red-200)
+  );
+  width: 100%;
+  border-radius: 0 0 0 6rem;
+
+  position: relative;
+  overflow: hidden;
+}
+.header__bg-pattern-desktop {
+  position: absolute;
+  top: -83rem;
+  left: -11rem;
+}
+.header__content {
+  padding-block: 4.5rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.header__title {
+  margin-top: 6rem;
+  font-size: 3.75rem;
+  font-family: var(--font-overpass);
+  font-weight: 600;
+
+  color: var(--white);
+  letter-spacing: -1px;
+}
+
+.header__subtitle {
+  margin-top: 0.875rem;
+
+  font-family: var(--font-overpass);
+  font-size: 19px;
+
+  color: var(--white);
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  margin: 2.5rem 0 5rem;
+}
+
+button.header__start-free,
+button.header__learn-more {
+  width: 8.5rem;
+  font-family: var(--font-ubuntu);
+  font-size: var(--size);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1;
+
+  padding: 0.95rem 0;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  transition: all 100ms ease-in-out;
+}
+
+button.header__start-free {
+  background: var(--white);
+  color: var(--light-red);
+}
+
+button.header__start-free:hover {
+  color: var(--white);
+  background: var(--white-opacity-100);
+}
+
+button.header__learn-more {
+  outline: 1px solid var(--white);
+  outline-offset: -1px;
+
+  color: white;
+}
+
+button.header__learn-more:hover {
+  color: var(--very-light-red);
+  background: var(--white);
+}

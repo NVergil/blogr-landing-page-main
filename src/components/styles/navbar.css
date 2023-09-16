@@ -1,0 +1,96 @@
+.blogr__navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blogr__logo {
+  width: 7em;
+  height: auto;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 3.5rem;
+}
+
+button.navbar__option-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: var(--size);
+  font-family: var(--font-ubuntu);
+  transition: none;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+button.navbar__option-button .arrow-down {
+  margin-top: 0.1rem;
+}
+
+.navbar__option-button::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 75ms ease-in-out;
+}
+
+.navbar__option-button:hover::before {
+  width: 100%;
+}
+
+li.nav__link {
+  color: black;
+  font-family: var(--font-ubuntu);
+  font-size: var(--size);
+  font-weight: 400;
+  transition: all 50ms ease-in-out;
+}
+
+.nav__link:hover {
+  font-weight: 700;
+}
+
+.buttons__navbar {
+  margin-left: auto;
+}
+
+button.navbar__login,
+button.navbar__signup {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-family: var(--font-ubuntu);
+  font-size: var(--size);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: none;
+  line-height: 1;
+}
+
+button.navbar__login {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+button.navbar__signup {
+  background: var(--white);
+  color: var(--light-red);
+  font-weight: 700;
+  transition: all 100ms ease-in-out;
+}
+button.navbar__signup:hover {
+  color: var(--white);
+  background: var(--white-opacity-100);
+}

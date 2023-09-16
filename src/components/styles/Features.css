@@ -1,0 +1,66 @@
+/* Features Section */
+
+.blogr__features {
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 15rem;
+
+  overflow: hidden;
+}
+
+.features__title,
+.features__subtitle,
+.features__description {
+  font-family: var(--font-overpass);
+  color: var(--very-dark-blue);
+}
+
+.features__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 7rem;
+}
+.features__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.features__text {
+  flex-basis: 48%;
+}
+
+.features__subtitle {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.features__description {
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  margin-bottom: 5rem;
+}
+
+.features__description:last-of-type {
+  margin-bottom: -2rem;
+}
+
+.features__visuals {
+  position: absolute;
+  right: -15rem;
+}
