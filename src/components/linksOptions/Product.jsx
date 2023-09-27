@@ -5,15 +5,19 @@ import MenuItem from "@mui/material/MenuItem";
 
 const Product = ({ arrowDown }) => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [arrowRotate, setArrowRotate] = useState("");
 
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    setArrowRotate(event.target.querySelector(".arrow-down"));
+    event.target.querySelector(".arrow-down").classList.add("rotate");
   };
 
   const handleClose = () => {
     setAnchorEl(null);
+    arrowRotate.classList.remove("rotate");
   };
 
   return (

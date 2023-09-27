@@ -27,11 +27,10 @@ const Features = () => {
               you’re in full control.
             </p>
           </article>
-        </div>
-        <div className="features__visuals">
-          <img src={illustrationEditorDesktop} alt="editor-desktop" />
+          <div className="features__visuals"></div>
         </div>
       </div>
+      <img src={illustrationEditorDesktop} alt="editor-desktop" />
     </section>
   );
 };
